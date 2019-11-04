@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">Pokedex1</string>
+    <string name="app_name">Pokédex</string>
+    <string name="password">Contraseña</string>
+    <string name="user_name">Usuario</string>
+    <string name="pokedex">Pokédex</string>
+    <string name="ingresar">Ingresar</string>
 </resources>

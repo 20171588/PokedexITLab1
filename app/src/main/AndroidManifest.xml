@@ -4,11 +4,11 @@
     package="com.omaruribe.pokedex1">
 
     <application
-        android:name=".Realm"
+        android:name=".StartRealm"
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/pokeicono"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/pokeicono"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
@@ -22,6 +22,7 @@
         <activity android:name=".pokemon.DatosPokemon"></activity>
         <activity android:name=".pokemon.ListaPokemon"></activity>
         <activity android:name=".usuario.RegisterActivity"></activity>
+        <activity android:name=".usuario.Presenter.RegisterPresenter"></activity>
     </application>
 
 </manifest>

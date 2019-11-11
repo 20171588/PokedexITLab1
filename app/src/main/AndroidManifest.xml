@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.omaruribe.pokedex1">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:name=".StartRealm"
         android:allowBackup="true"
@@ -22,7 +24,6 @@
         <activity android:name=".pokemon.DatosPokemon"></activity>
         <activity android:name=".pokemon.ListaPokemon"></activity>
         <activity android:name=".usuario.RegisterActivity"></activity>
-        <activity android:name=".usuario.Presenter.RegisterPresenter"></activity>
     </application>
 
 </manifest>

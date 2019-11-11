@@ -1,5 +1,6 @@
 package com.omaruribe.pokedex1.usuario
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
@@ -44,6 +45,12 @@ class RegisterActivity : AppCompatActivity() {
             usuario.password = password
             realm.commitTransaction()
             Toast.makeText(this,"Se ha registrado correctamente",Toast.LENGTH_SHORT).show()
+
+            finish()
+
+            //var intent = Intent(this, LogInActivity::class.java)
+
+            //intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
         }
     }
 

@@ -21,7 +21,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".pokemon.DatosPokemon"></activity>
+        <activity android:name=".pokemon.DatosPokemon"
+            android:theme="@style/DatosTheme"
+            ></activity>
         <activity android:name=".pokemon.ListaPokemon"></activity>
         <activity android:name=".usuario.RegisterActivity"></activity>
     </application>

@@ -1,7 +1,9 @@
 package com.omaruribe.pokedex1.pokemon
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -38,11 +40,7 @@ class ListaPokemon : AppCompatActivity(){
 
 
         viewManager = LinearLayoutManager(this)
-
-
-
     }
-
 
     private fun obtenerDatos() {
 
@@ -65,7 +63,7 @@ class ListaPokemon : AppCompatActivity(){
                     var pokemonRespuesta = response.body()
                     var listaPokemon = pokemonRespuesta!!.results
 
-                    listaPokeAdapter = PokeAdapter(listaPokemon)
+                    listaPokeAdapter = PokeAdapter(listaPokemon,context = this@ListaPokemon)
 
                     viewAdapter = listaPokeAdapter
 
@@ -82,4 +80,5 @@ class ListaPokemon : AppCompatActivity(){
         }
         )
     }
+
 }
